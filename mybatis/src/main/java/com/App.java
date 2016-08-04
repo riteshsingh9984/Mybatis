@@ -28,8 +28,5 @@ public class App {
 		emp.setEmail("dsafasdfa");
 		emp.setEmployeeName("HHH");
 		emp.setSalary("3253252");
-		EmployeeRepository repo = (EmployeeRepository)ApplicationBeanLoader.INSTANCE.getBean("employeeRepository");
-		
-		repo.insertEmployee(emp);
 	}
 }

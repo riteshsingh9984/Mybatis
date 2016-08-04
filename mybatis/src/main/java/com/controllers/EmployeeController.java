@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.SessionAttributes;
 
+import com.ApplicationBeanLoader;
 import com.models.Employee;
 import com.services.employee.EmployeeService;
 
@@ -32,9 +33,7 @@ public class EmployeeController {
 		emp.setEmail("dsafasdfa");
 		emp.setEmployeeName("HHH123");
 		emp.setSalary("3253252");
-		//EmployeeRepository repo = (EmployeeRepository)ApplicationBeanLoader.INSTANCE.getBean("employeeRepository");
 		
-		//repo.insertEmployee(emp);
 		employeeService.insertEmployee(emp);
 		
 		return null;
